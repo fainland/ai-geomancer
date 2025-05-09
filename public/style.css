@@ -1,0 +1,35 @@
+body {
+  font-family: 'Courier New', monospace;
+  background-color: #f9f4e8;
+  color: #3e2f1c;
+  text-align: center;
+  padding: 2em;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.2) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.symbol {
+  font-size: 2em;
+  white-space: pre;
+  margin-top: 1em;
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in-out forwards;
+  opacity: 0;
+}
+
+.fade-in-delay {
+  animation: fadeIn 3s ease-in-out forwards;
+  opacity: 0;
+  animation-delay: 2s;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
